@@ -1,0 +1,22 @@
+{
+  "version": "0.0.0",
+  "main": "build/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview",
+    "dev:electron": "npm run build && tsc -p tsconfig.electron.json && electron ./build/main.js"
+  },
+  "dependencies": {
+    "element-plus": "^1.0.2-beta.48",
+    "vue": "^3.0.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.2.3",
+    "@vue/compiler-sfc": "^3.0.5",
+    "electron": "^13.1.2",
+    "typescript": "^4.3.2",
+    "vite": "^2.3.7",
+    "vue-tsc": "^0.0.24"
+  }
+}
